@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+}
+.header__logo i {
+  width: 3px;
+  color: #fa3a5a;
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 15px;
+}
+
+.header__nav {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h1 {
+  color: white;
+}
+
+h1 span {
+  color: #f43f5e;
+}
+
+a:hover {
+  color: #f43f5e;
+}
+
+.header__btn {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #f43f5e;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header__btn:hover {
+  background-color: #f10b32;
+}
+
+.main {
+  background-color: #1f2937;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact__container {
+  width: 30%;
+  line-height: 1.5;
+}
+h2 {
+  color: white;
+  font-size: 27px;
+}
+
+.contact__container p {
+  padding: 20px 0;
+  color: #9ca3ac;
+}
+
+.contact__container span {
+  padding: 10px 0;
+  color: white;
+}
+
+.contact__container i {
+  color: #f43f5e;
+}
+.from {
+  padding: 20px;
+  background-color: #111827;
+  width: 30%;
+  border-radius: 8px;
+}
+
+.from h2 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+label {
+  color: #9ca3ac;
+}
+
+input {
+  padding: 10px 0;
+  background-color: #1f2937;
+}
+
+.info input {
+  width: 100%;
+}
+
+.info input,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  color: white;
+  margin-top: 1px; /* Khoảng cách từ chữ "Họ và tên" xuống ô nhập */
+
+  /* THÊM DÒNG NÀY ĐỂ CHỈNH KHOẢNG CÁCH GIỮA CÁC Ô */
+  margin-bottom: 25px; /* Thay đổi số 25px này to hay nhỏ tùy ý bạn */
+
+  outline: none;
+}
+
+/* Đồng thời, đảm bảo label hiển thị dạng block để nó nhận khoảng cách chuẩn nhất */
+.info label,
+.form-group label {
+  display: block;
+  margin-top: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #1f2937;
+  color: #9ca3ac;
+}
+
+option {
+  background-color: #1f2937;
+  color: #9ca3ac;
+}
+
+.from button {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #f43f5e;
+  padding: 10px 20px;
+}
+
+.from button:hover {
+  background-color: #f10b32;
+  cursor: pointer;
+}
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__container {
+    width: 100%;
+  }
+
+  .from {
+    width: 100%;
+  }
+  .header__nav {
+    display: none;
+  }
+}
